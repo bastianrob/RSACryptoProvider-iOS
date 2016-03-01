@@ -67,7 +67,7 @@ static const UInt8 privateKeyIdentifier[] = "com.budu.privatekey\0";
     if(privateKey) CFRelease(privateKey);
 }
 
--(NSString *)getPublicKey {
+-(NSString *)exportPublicKeyToPEM {
     //Public key name in KeyChain
     NSData * publicTag = [NSData dataWithBytes:publicKeyIdentifier
                                         length:strlen((const char *)publicKeyIdentifier)];
@@ -86,6 +86,24 @@ static const UInt8 privateKeyIdentifier[] = "com.budu.privatekey\0";
     }
     
     return [self PEMFormattedPublicKey:publiKeyData];
+}
+
+-(SecKeyRef)getPublicKey {
+    //Public key name in KeyChain
+    NSData * publicTag = [NSData dataWithBytes:publicKeyIdentifier
+                                        length:strlen((const char *)publicKeyIdentifier)];
+    
+    //Public key dictionary info for KeyChain Access
+    NSMutableDictionary *queryPublicKey = [[NSMutableDictionary alloc] init];
+    [queryPublicKey setObject:(__bridge id)kSecClassKey forKey:(__bridge id)kSecClass];
+    [queryPublicKey setObject:publicTag forKey:(__bridge id)kSecAttrApplicationTag];
+    [queryPublicKey setObject:(__bridge id)kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
+    [queryPublicKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecReturnRef];
+    
+    //Get the public key data
+    SecKeyRef publicKey = NULL;
+    SecItemCopyMatching((__bridge CFDictionaryRef)queryPublicKey, (CFTypeRef *)&publicKey);
+    return publicKey;
 }
 
 -(SecKeyRef)getPublicKeyWithTag:(NSString *)tagString {

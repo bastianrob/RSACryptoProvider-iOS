@@ -36,7 +36,7 @@
 }
 
 - (void)testExportPublicKeyToPEM {
-    NSString* pem = [RSACryptoManager.instance getPublicKey];
+    NSString* pem = [RSACryptoManager.instance exportPublicKeyToPEM];
     assert(pem != nil);
     NSLog(@"Public Key:\n%@", pem);
 }

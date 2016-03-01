@@ -26,10 +26,16 @@
 -(void)generateKeyPair;
 
 /**
- Get client's public key
- @return NSString: Public key in PEM format encoded as base64 string
+ Export client's public key to PEM string
+ @return NSString: Public key in PEM format
  */
--(NSString*)getPublicKey;
+-(NSString*)exportPublicKeyToPEM;
+
+/**
+ Get client's public key stored in keychain
+ @return SecKeyRef: RSA public key object
+ */
+-(SecKeyRef)getPublicKey;
 
 /**
  Get a public key stored in KeyChain as tagString
