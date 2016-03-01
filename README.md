@@ -4,14 +4,14 @@
 Just copy RSACryptoProvider folder to your project, or.
 Reference this project as embedded library
 
-#How to Use
+##How to Use
 
-1. Generate RSA Key Pair
+* Generate RSA Key Pair
 ```objective-c
 [RSACryptoManager.instance generateKeyPair];
 ```
 
-2. Encrypt & Decrypt using generated key
+* Encrypt & Decrypt using generated key
 ```objective-c
 NSData* data = [RSACryptoManager.instance encrypt:@“This is the plain string”];
 NSLog(@“Encrypted data: %@”, [data base64EncodedStringWithOptions:kNilOptions]);
@@ -20,13 +20,13 @@ NSLog(@"Decrypted string:%@", decrypted);
 
 ```
 
-3. Export public key to PEM string
+* Export public key to PEM string
 ```objective-c
 NSString* pem = [RSACryptoManager.instance exportPublicKeyToPEM];
 NSLog(@"Public Key:\n%@", pem);
 ```
 
-4. Add remote host public key
+* Add remote host public key
 ```objective-c
 NSString* testKey = @"-----BEGIN PUBLIC KEY-----\n"
 @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDUwPA4syH0K5x5EWwhGK/JLLSi\n"
@@ -40,7 +40,7 @@ OSStatus status = [RSACryptoManager.instance addPublicKey:testKey tag:@"serverKe
 assert(status == noErr);
 ```
 
-5. Encrypt using remote host public key
+* Encrypt using remote host public key
 ```objective-c
 NSString* str = @"This is the plain string"
 NSData* data = [RSACryptoManager.instance encrypt:str withPublicKey:@"serverKey"];
@@ -48,12 +48,12 @@ assert(data != nil);
 NSLog(@"Encrypted String: %@", [data base64EncodedStringWithOptions:kNilOptions]);
 ```
 
-6. Get generated public key
+* Get generated public key
 ```objective-c
 SecKeyRef publicKey = [RSACryptoManager.instance getPublicKey];
 ```
 
-7. Sign using generated private key and verify
+* Sign using generated private key and verify
 ```objective-c
 NSData* digitalSignature = [RSACryptoManager.instance sign:@"Sign this string!"];
 assert(digitalSignature != nil);
@@ -68,7 +68,7 @@ bool verified = [RSACryptoManager.instance verify:@"Sign this string!" signature
 assert(verified);
 ```
 
-8. Verify signed data using remote host public key
+* Verify signed data using remote host public key
 ```objective-c
 //Suppose we have @“Hello, I’m Server!” as message from remote host
 //And its digital signature in NSData format
