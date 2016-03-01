@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003FAC431C6EE73800B14DD9 /* ClientServerCryptographicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 003FAC421C6EE73800B14DD9 /* ClientServerCryptographicTest.m */; };
+		006795A51C6D70E20083E21D /* RSACryptoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 006795A41C6D70E20083E21D /* RSACryptoProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006795AC1C6D70E20083E21D /* RSACryptoProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006795A11C6D70E20083E21D /* RSACryptoProvider.framework */; };
+		006795B11C6D70E20083E21D /* RSACryptoProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 006795B01C6D70E20083E21D /* RSACryptoProviderTests.m */; };
+		006795BC1C6D71020083E21D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006795BB1C6D71020083E21D /* Security.framework */; };
+		006795BF1C6D72580083E21D /* RSACryptoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 006795BD1C6D72580083E21D /* RSACryptoManager.h */; };
+		006795C01C6D72580083E21D /* RSACryptoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 006795BE1C6D72580083E21D /* RSACryptoManager.m */; };
+		006795C31C6DA36D0083E21D /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 006795C11C6DA36D0083E21D /* Base64.h */; };
+		006795C41C6DA36D0083E21D /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006795C21C6DA36D0083E21D /* Base64.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		006795AD1C6D70E20083E21D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 006795981C6D70E20083E21D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 006795A01C6D70E20083E21D;
+			remoteInfo = RSACryptoProvider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003FAC421C6EE73800B14DD9 /* ClientServerCryptographicTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientServerCryptographicTest.m; sourceTree = "<group>"; };
+		006795A11C6D70E20083E21D /* RSACryptoProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSACryptoProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		006795A41C6D70E20083E21D /* RSACryptoProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSACryptoProvider.h; sourceTree = "<group>"; };
+		006795A61C6D70E20083E21D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006795AB1C6D70E20083E21D /* RSACryptoProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSACryptoProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		006795B01C6D70E20083E21D /* RSACryptoProviderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSACryptoProviderTests.m; sourceTree = "<group>"; };
+		006795B21C6D70E20083E21D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006795BB1C6D71020083E21D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		006795BD1C6D72580083E21D /* RSACryptoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSACryptoManager.h; sourceTree = "<group>"; };
+		006795BE1C6D72580083E21D /* RSACryptoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSACryptoManager.m; sourceTree = "<group>"; };
+		006795C11C6DA36D0083E21D /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		006795C21C6DA36D0083E21D /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0067959D1C6D70E20083E21D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006795BC1C6D71020083E21D /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006795A81C6D70E20083E21D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006795AC1C6D70E20083E21D /* RSACryptoProvider.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		006795971C6D70E20083E21D = {
+			isa = PBXGroup;
+			children = (
+				006795BB1C6D71020083E21D /* Security.framework */,
+				006795A31C6D70E20083E21D /* RSACryptoProvider */,
+				006795AF1C6D70E20083E21D /* RSACryptoProviderTests */,
+				006795A21C6D70E20083E21D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		006795A21C6D70E20083E21D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				006795A11C6D70E20083E21D /* RSACryptoProvider.framework */,
+				006795AB1C6D70E20083E21D /* RSACryptoProviderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		006795A31C6D70E20083E21D /* RSACryptoProvider */ = {
+			isa = PBXGroup;
+			children = (
+				006795C11C6DA36D0083E21D /* Base64.h */,
+				006795C21C6DA36D0083E21D /* Base64.m */,
+				006795A41C6D70E20083E21D /* RSACryptoProvider.h */,
+				006795A61C6D70E20083E21D /* Info.plist */,
+				006795BD1C6D72580083E21D /* RSACryptoManager.h */,
+				006795BE1C6D72580083E21D /* RSACryptoManager.m */,
+			);
+			path = RSACryptoProvider;
+			sourceTree = "<group>";
+		};
+		006795AF1C6D70E20083E21D /* RSACryptoProviderTests */ = {
+			isa = PBXGroup;
+			children = (
+				006795B01C6D70E20083E21D /* RSACryptoProviderTests.m */,
+				003FAC421C6EE73800B14DD9 /* ClientServerCryptographicTest.m */,
+				006795B21C6D70E20083E21D /* Info.plist */,
+			);
+			path = RSACryptoProviderTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0067959E1C6D70E20083E21D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006795C31C6DA36D0083E21D /* Base64.h in Headers */,
+				006795BF1C6D72580083E21D /* RSACryptoManager.h in Headers */,
+				006795A51C6D70E20083E21D /* RSACryptoProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		006795A01C6D70E20083E21D /* RSACryptoProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 006795B51C6D70E20083E21D /* Build configuration list for PBXNativeTarget "RSACryptoProvider" */;
+			buildPhases = (
+				0067959C1C6D70E20083E21D /* Sources */,
+				0067959D1C6D70E20083E21D /* Frameworks */,
+				0067959E1C6D70E20083E21D /* Headers */,
+				0067959F1C6D70E20083E21D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSACryptoProvider;
+			productName = RSACryptoProvider;
+			productReference = 006795A11C6D70E20083E21D /* RSACryptoProvider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		006795AA1C6D70E20083E21D /* RSACryptoProviderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 006795B81C6D70E20083E21D /* Build configuration list for PBXNativeTarget "RSACryptoProviderTests" */;
+			buildPhases = (
+				006795A71C6D70E20083E21D /* Sources */,
+				006795A81C6D70E20083E21D /* Frameworks */,
+				006795A91C6D70E20083E21D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				006795AE1C6D70E20083E21D /* PBXTargetDependency */,
+			);
+			name = RSACryptoProviderTests;
+			productName = RSACryptoProviderTests;
+			productReference = 006795AB1C6D70E20083E21D /* RSACryptoProviderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		006795981C6D70E20083E21D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Budu;
+				TargetAttributes = {
+					006795A01C6D70E20083E21D = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					006795AA1C6D70E20083E21D = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 0067959B1C6D70E20083E21D /* Build configuration list for PBXProject "RSACryptoProvider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 006795971C6D70E20083E21D;
+			productRefGroup = 006795A21C6D70E20083E21D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				006795A01C6D70E20083E21D /* RSACryptoProvider */,
+				006795AA1C6D70E20083E21D /* RSACryptoProviderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0067959F1C6D70E20083E21D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006795A91C6D70E20083E21D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0067959C1C6D70E20083E21D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006795C41C6DA36D0083E21D /* Base64.m in Sources */,
+				006795C01C6D72580083E21D /* RSACryptoManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006795A71C6D70E20083E21D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006795B11C6D70E20083E21D /* RSACryptoProviderTests.m in Sources */,
+				003FAC431C6EE73800B14DD9 /* ClientServerCryptographicTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		006795AE1C6D70E20083E21D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 006795A01C6D70E20083E21D /* RSACryptoProvider */;
+			targetProxy = 006795AD1C6D70E20083E21D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		006795B31C6D70E20083E21D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		006795B41C6D70E20083E21D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		006795B61C6D70E20083E21D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RSACryptoProvider/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.budu.rsacrypto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		006795B71C6D70E20083E21D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RSACryptoProvider/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.budu.rsacrypto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		006795B91C6D70E20083E21D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RSACryptoProviderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jawasoft.RSACryptoProviderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		006795BA1C6D70E20083E21D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RSACryptoProviderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jawasoft.RSACryptoProviderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0067959B1C6D70E20083E21D /* Build configuration list for PBXProject "RSACryptoProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006795B31C6D70E20083E21D /* Debug */,
+				006795B41C6D70E20083E21D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		006795B51C6D70E20083E21D /* Build configuration list for PBXNativeTarget "RSACryptoProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006795B61C6D70E20083E21D /* Debug */,
+				006795B71C6D70E20083E21D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		006795B81C6D70E20083E21D /* Build configuration list for PBXNativeTarget "RSACryptoProviderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006795B91C6D70E20083E21D /* Debug */,
+				006795BA1C6D70E20083E21D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 006795981C6D70E20083E21D /* Project object */;
+}
